@@ -1,0 +1,32 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+
+
+ .nav-item {
+ 	margin: 0-auto;
+ 	margin-left: 20px;
+ 	font-size: 20px;
+ }
+
+.navbar-brand {
+	margin-left: 50px;
+}
+
+.nav-link {
+	color: lightgray;
+}
+.bi-instagram {
+	font-size: 25px;
+	color: whitesmoke;
+	padding-right: 25px;
+}
+.bi-facebook {
+	font-size: 25px;
+	color: whitesmoke;
+	padding-right: 25px;
+}
+.coisa {
+	padding-top: 100px;
+}
+
+

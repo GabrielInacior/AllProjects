@@ -1,10 +1,26 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+ 
+import { DashboardRoutes } from './dashboard';
+import { CalculadoraRoutes } from './calculadora';
+import { TarefaRoutes } from './tarefas';
+import { JogoDaVelhaRoutes } from './jogo-da-velha';
 
-const routes: Routes = [];
-
+ 
+export const routes: Routes = [
+  { 
+    path: '', 
+    redirectTo: '/dashboard', 
+    pathMatch: 'full' 
+  },
+  ...DashboardRoutes,
+  ...CalculadoraRoutes,
+  ...TarefaRoutes,
+  ...JogoDaVelhaRoutes
+];
+ 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

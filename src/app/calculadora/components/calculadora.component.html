@@ -1,0 +1,36 @@
+<div id="out">
+  <div>
+    <button type="button" class="btn btn-danger kz-btn"(click)="limpar()">C</button>
+  </div>
+  <input type="text" class="form-control text-right kz-input-text" id="display" name="display" [value]="display" readonly>
+
+<div>
+  <button type="button" class="btn btn-default kz-btn" (click)="adicionarNumero('7')" 
+  id="btn7">7</button>
+  <button type="button" class="btn btn-default kz-btn" (click)="adicionarNumero('8')" id="btn7">8</button>
+  <button type="button" class="btn btn-default kz-btn" (click)="adicionarNumero('9')"  id="btn7">9</button>
+   <button type="button" class="btn btn-primary kz-btn" (click)= "definirOperacao('/')"
+   id="btn7">/</button>
+</div>
+<div>
+  <button type="button" class="btn btn-default kz-btn" (click)="adicionarNumero('4')" id="btn7">4</button>
+  <button type="button" class="btn btn-default kz-btn" (click)="adicionarNumero('5')" id="btn7">5</button>
+  <button type="button" class="btn btn-default kz-btn" (click)="adicionarNumero('6')" id="btn7">6</button>
+   <button type="button" class="btn btn-primary kz-btn" (click)= "definirOperacao('*')"id="btn7">*</button>
+</div>
+<div>
+  <button type="button" class="btn btn-default kz-btn" (click)="adicionarNumero('1')" id="btn7">1</button>
+  <button type="button" class="btn btn-default kz-btn" (click)="adicionarNumero('2')" id="btn7">2</button>
+  <button type="button" class="btn btn-default kz-btn" (click)="adicionarNumero('3')" id="btn7">3</button>
+   <button type="button" class="btn btn-primary kz-btn" (click)= "definirOperacao('-')"
+   id="btn7">-</button>
+</div>
+<div>
+  <button type="button" class="btn btn-default kz-btn" (click)="adicionarNumero('0')" id="btn7">0</button>
+  <button type="button" class="btn btn-default kz-btn" (click)= "adicionarNumero('.')"id="btn7">.</button>
+  <button type="button" class="btn btn-success kz-btn" (click)= "calcular()"id="btn7">=</button>
+   <button type="button" class="btn btn-primary kz-btn" (click)= "definirOperacao('+')"
+   id="btn7">+</button>
+</div>
+
+</div>
